@@ -1,0 +1,71 @@
+.header-right{
+    display: none;
+}
+
+.header-right-menu{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+span{
+    background-color: black;
+    height: 2px;
+    width: 30px;
+    display: block;
+    margin: 8px 0px;
+    
+}
+
+.header-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list{
+    margin-top: 50px;
+    /* background-color: aqua; */
+}
+.list a{
+    /* background-color: aqua; */
+    text-decoration: none;
+    height: 100px;
+}
+
+
+/* ----------------------PC------------------- */
+@media (min-width:1024px) {
+   
+.header-right-menu{
+    display: none;
+}    
+.header-right a{
+    text-decoration: none;
+}
+
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.header-left{
+    margin-left: 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    gap: 40px;
+}
+
+.footer-main{
+    text-align: center;
+}
+
+
+}
