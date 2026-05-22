@@ -13,22 +13,14 @@ const About = () => {
             <h1 className='name-down' style={{ textAlign: 'center' }}>KABINDRA BOHARA G</h1>
 
             <div className="about">
-            <h1>About Me</h1> <br className='bracket'/>
+                <h1>About Me</h1> <br className='bracket' />
                 <p>
-                    I’m a 20-year-old Computer Science & Engineering student currently in my 4th year at SNS College of Technology, Coimbatore, and will be graduating in 2027. I completed my schooling at Mount Carmel Matric. Hr. Secondary School in 2023 with a background in Mathematics and Computer Science.
-
-                    My interest in Computer Science comes from my passion for programming and the creativity it offers. I enjoy the idea of building things through code and making computers solve real-world problems.
-
-                    I’m especially interested in Machine Learning and Data Science, and I’m continuously learning and improving my skills in these areas through projects and practice.
-
-                    Apart from academics, I enjoy playing battle royale games like Free Fire, BGMI, and Call of Duty, exploring interesting content on YouTube, reading articles, traveling, and binge-watching series.
-
-                    I strongly believe that passion, consistency, and determination are the keys to achieving success.
+                    I’m 21 years old and currently in my final year of Computer Science & Engineering at SNS College of Technology, Coimbatore. I completed my schooling at Mount Carmel Matriculation Higher Secondary School in 2023, with a background in Mathematics and Computer Science. I chose Computer Science and Engineering because I’ve always enjoyed programming—it’s fascinating how, with the right knowledge, you can make a computer do almost anything you imagine. Lately, I’ve been especially interested in Machine Learning and Data Science, and I’m actively working on building my skills in these areas. Outside of academics, I enjoy battle royale games like Free Fire and Call of Duty. I also like reading articles, exploring random YouTube content, traveling, and binge-watching series. I strongly believe that passion, combined with determination, can take you a long way.
                 </p>
-            </div> 
+            </div>
 
             <div className="keywords">
-                <h1>Few Keywords that define me</h1> <br className='bracket'/>
+                <h1>Few Keywords that define me</h1> <br className='bracket' />
                 <ul>
                     <li>1. Design Thinker</li>
                     <li>2. Team Leader</li>
