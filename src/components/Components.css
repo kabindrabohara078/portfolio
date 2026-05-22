@@ -1,3 +1,5 @@
+/* THIS IS MOBILE VERSION OF THE COMPONENTS */
+/* ========================HEADER START================================= */
 .header-right{
     display: none;
 }
@@ -28,18 +30,109 @@ span{
 
 .list{
     margin-top: 50px;
-    /* background-color: aqua; */
 }
 .list a{
-    /* background-color: aqua; */
     text-decoration: none;
     height: 100px;
 }
+/* ==============================HEADER END===================================== */
 
 
-/* ----------------------PC------------------- */
+
+/* =============================CARD-START========================== */
+
+.card-main{
+    height: 600px;
+    width: 350px;
+    /* background-color: #095285; */
+    line-height: normal;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 10px;
+
+}
+
+.card-main .image{
+    display: flex;
+    /* display: block; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.card-main img{
+    border-radius: 0px;
+    width: 100%;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.card-main .link{
+    background-color: #095285;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-main a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.card-main .details{
+    padding: 10px;
+}
+
+
+
+
+/* =============================CARD-END========================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THIS IS PC VERSION OF THE COMPONENTS */
 @media (min-width:1024px) {
-   
+/* ========================HEADER-START=================================== */
 .header-right-menu{
     display: none;
 }    
@@ -56,7 +149,6 @@ span{
 .header-left{
     margin-left: 20px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     cursor: pointer;
 }
@@ -68,12 +160,6 @@ span{
 .header-right{
     display: flex;
     align-items: center;
-    /* margin-right: 40px; */
-    /* gap: 40px; */
-}
-
-.footer-main{
-    text-align: center;
 }
 
 .header-right ul{
@@ -86,7 +172,6 @@ span{
     height: 100%;
     padding:0px 30px 0px 30px;
     width: 100%;
-    /* background-color: aqua;  */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,4 +182,49 @@ span{
     color: white;
 }
 
+
+/* ========================HEADER-END=================================== */
+
+
+
+/* ========================FOOTER-START=================================== */
+.footer-main{
+    text-align: center;
 }
+/* ========================FOOTER-END=================================== */
+
+
+/* ============================CARD-START============================= */
+.card-main{
+    height: 350px;
+    width: 500px;
+    margin-bottom: 50px;
+}
+.card-main .image{
+    margin-left: 0px;
+    padding: 0px;
+    display:block;
+}
+.image img{
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+    /* margin: 10px; */
+    /* padding-left: 10px; */
+
+}
+.details{
+    font-size: 15px;
+    height: auto;
+}
+
+/* ============================CARD-END============================= */
+
+
+
+
+}
+
+
+
+
