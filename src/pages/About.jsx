@@ -12,7 +12,7 @@ const About = () => {
 
 
             <div className="about">
-            <h1>About Me</h1>
+            <h1>About Me</h1> <br />
                 <p>
                     I’m a 20-year-old Computer Science & Engineering student currently in my 4th year at SNS College of Technology, Coimbatore, and will be graduating in 2027. I completed my schooling at Mount Carmel Matric. Hr. Secondary School in 2023 with a background in Mathematics and Computer Science.
 
@@ -24,10 +24,10 @@ const About = () => {
 
                     I strongly believe that passion, consistency, and determination are the keys to achieving success.
                 </p>
-            </div>
+            </div> 
 
             <div className="keywords">
-                <h1>Few Keywords that define me</h1>
+                <h1>Few Keywords that define me</h1> <br />
                 <ul>
                     <li>1. Design Thinker</li>
                     <li>2. Team Leader</li>

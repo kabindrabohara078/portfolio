@@ -54,18 +54,43 @@ span{
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    cursor: pointer;
+}
+.header-left a{
+    text-decoration: none;
+    color: black;
 }
 
 .header-right{
     display: flex;
     align-items: center;
-    margin-right: 40px;
-    gap: 40px;
+    /* margin-right: 40px; */
+    /* gap: 40px; */
 }
 
 .footer-main{
     text-align: center;
 }
 
+.header-right ul{
+    height: 100%;
+    width: 100%;
+    
+    cursor: pointer;
+}
+.header-right ul a{
+    height: 100%;
+    padding:0px 30px 0px 30px;
+    width: 100%;
+    /* background-color: aqua;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.header-right ul a:hover{
+    background-color: #095285;
+    color: white;
+}
 
 }

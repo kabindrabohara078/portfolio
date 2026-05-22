@@ -7,8 +7,9 @@ const Header = (props) => {
   return (
     <div className='header-main'>
 
-        <div className="header-left">
+        <div className="header-left"><Link to='/'>
             <h1>Portfolio</h1>
+        </Link>
         </div>
 
         <div className="header-right-menu">
