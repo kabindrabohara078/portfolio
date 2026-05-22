@@ -4,15 +4,16 @@ import './Pages.css'
 const About = () => {
     return (
         <div className="about-main">
-            <h1 className='name' style={{ textAlign: 'center' }}>KABINDRA BOHARA G</h1>
+            <h1 className='name name-up' style={{ textAlign: 'center' }}>KABINDRA BOHARA G</h1>
 
             <div className="profile-image">
                 <img src="/profile-picture.jpeg" alt="" />
             </div>
 
+            <h1 className='name-down' style={{ textAlign: 'center' }}>KABINDRA BOHARA G</h1>
 
             <div className="about">
-            <h1>About Me</h1> <br />
+            <h1>About Me</h1> <br className='bracket'/>
                 <p>
                     I’m a 20-year-old Computer Science & Engineering student currently in my 4th year at SNS College of Technology, Coimbatore, and will be graduating in 2027. I completed my schooling at Mount Carmel Matric. Hr. Secondary School in 2023 with a background in Mathematics and Computer Science.
 
@@ -27,7 +28,7 @@ const About = () => {
             </div> 
 
             <div className="keywords">
-                <h1>Few Keywords that define me</h1> <br />
+                <h1>Few Keywords that define me</h1> <br className='bracket'/>
                 <ul>
                     <li>1. Design Thinker</li>
                     <li>2. Team Leader</li>

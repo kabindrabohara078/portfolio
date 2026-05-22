@@ -1,4 +1,4 @@
-.name{
+.name-up{
     display: none;
 }
 
@@ -28,6 +28,70 @@ img{
     line-height: 1.5;
 
 }
+.bracket{
+    display: none;
+}
+.keywords{
+    font-size: 12px;
+}
+.keywords ul{
+    line-height: 2;
+}
+
+
+/* ============================================================ */
+/* RESUME-PAGE */
+.resume-video iframe{
+    height: 250px;
+    width: 100%;
+    max-width: 550px;
+    
+}
+.resume-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-file{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: gray; */
+}
+
+.resume-file img{
+    
+    height: 100%;
+    border-radius: 0px;
+    width: 90%;
+}
+
+.download-resume{
+    display: flex;
+    justify-content: center;
+    background-color: #095285;
+    height: 30px;
+}
+.download-resume a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+.title-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ============================================================ */
 
 
 @media (min-width:1024px){
@@ -49,6 +113,9 @@ img{
     width: 400px;
     border-radius: 20%;
 }
+.name-down{
+    display: none;
+}
 
 .about{
     margin-top: 30px;
@@ -66,6 +133,56 @@ img{
     margin-left: 30px;
 }
 
+
+/* ============================================================ */
+/* RESUME-PAGE */
+.resume-file{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.resume-file img{
+    height: 80%;
+    width: 60%;
+    border-radius: 0px;
+    /* background-color: aqua; */
+}
+
+.resume-video{
+    display: flex;
+    justify-content: center;
+}
+.resume-video iframe{
+    height: 300px;
+    width: 30%;
+}
+
+
+.download-resume{
+    height: 50px;
+    width: 100%;
+    background-color: #095285;
+    /* color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download-resume a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download-resume a:hover{
+
+    background-color: rgb(96, 96, 187);
+
+}
 
 }
 
