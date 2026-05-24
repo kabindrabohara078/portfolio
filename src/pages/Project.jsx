@@ -101,7 +101,7 @@ const Project = () => {
       project_date: '22-05-2026',
       project_logo:'/portfolio-logo.png',
       project_desc:'This is a personal site made for myself. It has my projects and resume informations. It displays my skills with reactjs. Basically the one you are watching right now.',
-      project_version: 'v0.1.0',
+      project_version: 'v0.2.0',
       project_link:''
     },
     {
