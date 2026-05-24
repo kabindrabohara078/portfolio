@@ -119,7 +119,7 @@ const Project = () => {
     <> 
 
     <br className='bracket'/><br className='bracket'/><br className='bracket'/>
-      <div className="pro"><h1>My Projects so far! (most are dummy, scroll from last)</h1></div>
+      <div className="pro"><h1>My Projects so far! (most are dummy, scroll to the end)</h1></div>
     <div className="projects-main">
 
 
