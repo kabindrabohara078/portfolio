@@ -26,12 +26,15 @@ const Resume = () => {
       </div>
       
       <div className="resume-file">
-        <img src="/resume.png" alt="One page resume image" />
-      </div>
+        <img src="/resume.jpeg" alt="One page resume image" />
+      </div> <br />
       <div className="download-resume">
 
       <a href="/Kabindra_Bohara_G_Resume_22_05_2026.pdf" download>Download Resume</a>
+      <a href="/kabindra_bohara_ATS_2026.pdf" download>Download ATS</a>
+      
       </div>
+      
     </div>
   )
 }

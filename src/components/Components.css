@@ -42,7 +42,7 @@ span{
 /* =============================CARD-START========================== */
 
 .card-main{
-    height: 600px;
+    height: 550px;
     width: 350px;
     /* background-color: #095285; */
     line-height: normal;
@@ -63,19 +63,11 @@ span{
 
 .card-main img{
     border-radius: 0px;
-    width: 100%;
+    width: 80%;
+    height: 80%;
     margin: 10px;
     border: 1px solid black;
     border-radius: 20px;
-}
-.card-main .link{
-    /* background-color: #095285; */
-    height: 40px;
-    width: 100px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .card-main a{
     height: 100%;
@@ -91,8 +83,28 @@ span{
     padding: 10px;
 }
 
+.card-main .link{
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #095285;
+    cursor: pointer;
+}
 
 .disabled-link{
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    background-color: grey;
+}
+
+.disabled-link a{
     pointer-events: none;
 }
 
