@@ -25,12 +25,12 @@ const Project = () => {
     },
     {
       id:'2',
-      project_name:'Dummy',
-      project_date: '__-__-____',
+      project_name:'EchoGraph Frontend',
+      project_date: '27-05-2026',
       project_logo:'/project-na.jpeg',
-      project_desc:'This is a dummy test template. This will be replaced by a project soon!',
-      project_version: 'v-.-.-',
-      project_link:'NA'
+      project_desc:'It is frontend of my main project EchoGraph',
+      project_version: 'v0.0.1',
+      project_link:'https://echograph-frontend.vercel.app/'
     },
     {
       id:'1',
