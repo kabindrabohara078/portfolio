@@ -16,19 +16,19 @@ const Project = () => {
     },
     {
       id:'3',
-      project_name:'Dummy',
-      project_date: '__-__-____',
-      project_logo:'/project-na.jpeg',
-      project_desc:'This is a dummy test template. This will be replaced by a project soon!',
-      project_version: 'v-.-.-',
+      project_name:'Circle Sync',
+      project_date: '31-05-2026',
+      project_logo:'/Screenshot_2026-05-31_19-38-55.png',
+      project_desc:'This project is a social media application that utilizes graph data structures to represent users, interests, and interactions.',
+      project_version: 'v0.0.3',
       project_link:'NA'
     },
     {
       id:'2',
-      project_name:'EchoGraph Frontend',
+      project_name:'EchoGraph (Frontend)',
       project_date: '27-05-2026',
-      project_logo:'/project-na.jpeg',
-      project_desc:'It is frontend of my main project EchoGraph',
+      project_logo:'/public/Screenshot_2026-05-31_20-05-42.png',
+      project_desc:'React-based frontend for EchoGraph — an AI semantic memory system for storing, searching, and interacting with contextual memories through a clean API-driven interface. ',
       project_version: 'v0.0.1',
       project_link:'https://echograph-frontend.vercel.app/'
     },

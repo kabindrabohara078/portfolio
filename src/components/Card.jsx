@@ -18,7 +18,13 @@ const Card = (props) => {
 
                 <h2>{props.name}</h2>
                 <h3>Created on: {props.date}</h3>
-                <h5 className='description'>{props.desc}</h5>
+                <h5 className='description'
+                style={{
+                    overflowY:'auto',
+                    lineHeight:'1.5em',
+                    maxHeight:'calc(2*1.5em)'
+                }}
+                >{props.desc}</h5>
                 <h5>{props.ver}</h5>  <br/>
                 <div className={props.link === 'NA' ? 'disabled-link': 'link'}>
 
