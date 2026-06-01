@@ -16,18 +16,18 @@ const Project = () => {
     },
     {
       id:'3',
-      project_name:'Circle Sync',
+      project_name:'Circle Sync [not mobile friendly yet]',
       project_date: '31-05-2026',
       project_logo:'/Screenshot_2026-05-31_19-38-55.png',
       project_desc:'This project is a social media application that utilizes graph data structures to represent users, interests, and interactions.',
       project_version: 'v0.0.3',
-      project_link:'NA'
+      project_link:'https://circle-sync-pxo7.vercel.app/'
     },
     {
       id:'2',
       project_name:'EchoGraph (Frontend)',
       project_date: '27-05-2026',
-      project_logo:'/public/Screenshot_2026-05-31_20-05-42.png',
+      project_logo:'/Screenshot_2026-05-31_20-05-42.png',
       project_desc:'React-based frontend for EchoGraph — an AI semantic memory system for storing, searching, and interacting with contextual memories through a clean API-driven interface. ',
       project_version: 'v0.0.1',
       project_link:'https://echograph-frontend.vercel.app/'
