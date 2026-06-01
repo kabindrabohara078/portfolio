@@ -6,15 +6,6 @@ const Project = () => {
 
   const projects=[
     {
-      id:'4',
-      project_name:'Dummy',
-      project_date: '__-__-____',
-      project_logo:'/project-na.jpeg',
-      project_desc:'This is a dummy test template. This will be replaced by a project soon!',
-      project_version: 'v-.-.-',
-      project_link:'NA'
-    },
-    {
       id:'3',
       project_name:'Circle Sync [not mobile friendly yet]',
       project_date: '31-05-2026',
@@ -56,7 +47,7 @@ const Project = () => {
     <> 
 
     <br className='bracket'/><br className='bracket'/><br className='bracket'/>
-      <div className="pro"><h1>My Projects so far! (most are dummy, scroll to the end)</h1></div>
+      <div className="pro"><h1>My Projects under development</h1></div>
     <div className="projects-main">
 
 
