@@ -2,7 +2,40 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>This is my contacts -- Under development! </div>
+    <div className="main-contact">
+      <div className="hero">  <br />
+        Contact me
+      </div> <br />
+
+      <div className="media">
+
+        <ul>
+          <div className="tile">
+          <a href=""> <img src="/email-mail-svgrepo-com.svg" alt="" /> Email </a> <br />
+
+          </div>
+          <div className="tile">
+          <a href=""> <img src="/linkedin-svgrepo-com.svg" alt="" /> LinkedIn </a> <br />
+
+          </div>
+          <div className="tile">
+          <a href="tel:+917010524507"> <img src="/phone-out-circle-fill-svgrepo-com.svg" alt="" /> Phone </a>
+
+          </div>
+          <div className="tile">
+        <a href="https://leetcode.com/u/Kabindra_bohara/" target='_blank'> <img src="/leetcode-svgrepo-com.svg" alt="" />  Leetcode</a> <br />
+
+          </div>
+          <div className="tile">
+          <a href="https://github.com/kabindrabohara078" target='_blank'> <img src="/github-color-svgrepo-com.svg" alt="" /> GitHub</a>
+
+          </div>
+        </ul>
+
+
+
+      </div>
+    </div>
   )
 }
 

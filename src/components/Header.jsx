@@ -27,10 +27,22 @@ const Header = (props) => {
 
 
         <div className='header-right'>
-            <ul><Link to='/'>About</Link></ul>
-            <ul><Link to='/resume'>Resume</Link></ul>
-            <ul><Link to='/projects'>Projects</Link></ul>
-            <ul><Link to='/contacts'>Contact</Link></ul>
+            <ul><Link 
+            style={{
+              color:'white'
+            }} to='/'>About</Link></ul>
+            <ul><Link 
+            style={{
+              color:'white'
+            }} to='/resume'>Resume</Link></ul>
+            <ul><Link 
+            style={{
+              color:'white'
+            }} to='/projects'>Projects</Link></ul>
+            <ul><Link 
+            style={{
+              color:'white'
+            }} to='/contacts'>Contact</Link></ul>
         </div>
     </div>
   )

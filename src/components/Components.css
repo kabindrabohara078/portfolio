@@ -9,9 +9,9 @@
     align-items: center;
     margin-right: 15px;
 }
-
+ 
 span{
-    background-color: black;
+    background-color: white;
     height: 2px;
     width: 30px;
     display: block;
@@ -19,13 +19,20 @@ span{
     
 }
 
+
 .header-main{
     display: flex;
     justify-content: space-between;
+    background-color: black;
 }
 .header-left a{
+    color: white;
     text-decoration: none;
-    color: black;
+    /* color: black; */
+}
+.header-left a h1{
+    color: white;
+    padding-left: 10px;
 }
 
 .list{
