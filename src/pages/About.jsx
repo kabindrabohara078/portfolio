@@ -9,6 +9,14 @@ const About = () => {
 
             <div className="profile-image">
                 <img src="/profile-picture.jpeg" alt="" />
+                 <div className="page-quick">
+
+                    <Link to='https://one-page-resume-ashen.vercel.app/'>
+                        <div className="click-quick">
+                            Click here for a one-page version
+                        </div>
+                    </Link>
+                </div>
             </div>
 
             <h1 className='name-down' style={{ textAlign: 'center' }}>KABINDRA BOHARA G</h1>
