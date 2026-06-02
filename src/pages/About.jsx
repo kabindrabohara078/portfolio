@@ -18,7 +18,7 @@ const About = () => {
 
                     <Link to='https://one-page-resume-ashen.vercel.app/'>
                         <div className="click-quick">
-                            Click here for a short resume
+                            Click here for a one-page version
                         </div>
                     </Link>
                 </div>
