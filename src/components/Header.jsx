@@ -7,7 +7,7 @@ const Header = (props) => {
   return (
     <div className='header-main'>
 
-        <div className="header-left"><Link to='/'>
+        <div className="header-left"><Link to='/' onClick={() => setMenu(false)}>
             <h1>Portfolio</h1>
         </Link>
         </div>

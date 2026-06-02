@@ -22,6 +22,8 @@ const App = () => {
       <Header menu={menu} setMenu={setMenu}/>
       </div>
 
+
+
       {menu && 
         <div className="menu-container">
 
@@ -29,7 +31,7 @@ const App = () => {
         </div>
       }
 
-      <div className="content">
+      <div className="content"  onClick={() => setMenu(false)}>
       <Routes>
         <Route path='/' element={<About/>}/>
         <Route path='/resume' element={<Resume/>}/>
