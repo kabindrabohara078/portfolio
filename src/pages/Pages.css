@@ -57,11 +57,17 @@ li{
 
 .about{
     text-align: justify;
-    width: 98%;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
     line-height: 1.5;
+    width: 100%;
+    /* border: 1px solid pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about p{
+    width: 95%;
 
 }
 .bracket{

@@ -8,7 +8,6 @@ const Resume = () => {
         <br /> <br /> 
       
       <div className="title-1">
-        <br /><br /> <br /><br /><br />
 
       
         <h1>One Page Resume</h1> <br /><br /> 
@@ -38,7 +37,7 @@ const Resume = () => {
 
       <div className="resume-video">
         {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/xE02X2RR_Eg?si=2-ZvREHrWRjapbBP" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
-        <img src="public/project-na.jpeg" alt="" />
+        <img src="public/project-na.jpeg" alt="unavailable" />
       </div>
 
       <br /><br />
