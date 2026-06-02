@@ -88,8 +88,9 @@ li{
     align-items: center;
 }
 .resume-video img{
-    /* height: 250px; */
+    height: 250px;
     width: 90%;
+    
 }
 
 .resume-file{
@@ -232,6 +233,11 @@ img{
 .resume-video{
     display: flex;
     justify-content: center;
+}
+.resume-video img{
+    width: 400px;
+    height: 300px;
+    border-radius: 0px;
 }
 .resume-video iframe{
     height: 300px;

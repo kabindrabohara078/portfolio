@@ -25,6 +25,9 @@ span{
     justify-content: space-between;
     background-color: black;
     height: 70px;
+    z-index: 100;
+    position: relative;
+    
 
 }
 .header-left a{
@@ -87,6 +90,8 @@ span{
     border: 1px solid black;
     border-radius: 20px;
     margin: 10px;
+    position: relative;
+
 
 }
 
@@ -130,6 +135,8 @@ span{
     align-items: center;
     background-color: #095285;
     cursor: pointer;
+    position: absolute;
+    bottom: 10px;
     
 }
 
@@ -141,6 +148,8 @@ span{
     align-items: center;
     pointer-events: none;
     background-color: grey;
+    position: absolute;
+    bottom: 10px;
 }
 
 .disabled-link a{
@@ -198,6 +207,7 @@ span{
     display: flex;
     justify-content: space-between;
     height: 60px;
+    z-index: 100;
 }
 
 .header-left{
