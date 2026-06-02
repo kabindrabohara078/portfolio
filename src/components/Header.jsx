@@ -13,7 +13,11 @@ const Header = (props) => {
         </div>
 
         <div className="header-right-menu">
-          <div className="spans" onClick={ () => {
+          <div className="spans" 
+          style={{
+            cursor:'pointer'
+          }}
+          onClick={ () => {
 
             props.setMenu(!props.menu)
           }

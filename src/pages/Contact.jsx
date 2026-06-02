@@ -11,11 +11,15 @@ const Contact = () => {
 
         <ul>
           <div className="tile">
-          <a href=""> <img src="/email-mail-svgrepo-com.svg" alt="" /> Email </a> <br />
+          <a href="mailto:kabindrabohara1@gmail.com"> <img src="/email-mail-svgrepo-com.svg" alt="" /> Email </a> <br />
 
           </div>
           <div className="tile">
-          <a href=""> <img src="/linkedin-svgrepo-com.svg" alt="" /> LinkedIn </a> <br />
+          <a href="https://www.linkedin.com/in/kabindra-bohara-g"> <img src="/linkedin-svgrepo-com.svg" alt="" /> LinkedIn </a> <br />
+
+          </div>
+          <div className="tile">
+          <a href="https://wa.me/917010524507"> <img src="/whatsapp-svgrepo-com.svg" alt="" /> WhatsApp </a> <br />
 
           </div>
           <div className="tile">

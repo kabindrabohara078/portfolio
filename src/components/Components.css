@@ -56,20 +56,31 @@ span{
 /* ===========================menu */
 .menu-main .list ul{
     gap: 200px;
-    height: 50px;
+    /* height: 60px; */
+    line-height: 2.5;
     padding-left: 20px;
+    display: block;
+}
+.menu-main .list ul ul a{
+    color: black;
+
 }
 
 .menu-main .list{
     margin-top: 80px;
 }
 
-
+.menu-main .list ul ul .sub .subs{
+    padding-left: 20px;
+}
+.menu-main .list ul ul .sub{
+    display: block;
+}
 
 /* =============================CARD-START========================== */
 
 .card-main{
-    height: 550px;
+    height: 450px;
     width: 350px;
     /* background-color: #095285; */
     line-height: normal;
@@ -119,6 +130,7 @@ span{
     align-items: center;
     background-color: #095285;
     cursor: pointer;
+    
 }
 
 .disabled-link{
@@ -133,6 +145,7 @@ span{
 
 .disabled-link a{
     pointer-events: none;
+    /* background-color: #095285; */
 }
 
 /* =============================CARD-END========================== */

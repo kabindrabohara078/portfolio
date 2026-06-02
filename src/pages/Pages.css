@@ -139,6 +139,11 @@ li{
     align-items: center;
 }
 
+.pro h1{
+    padding-left: 10px;
+}
+
+
 /* ==============================PROJECTS-PAGE-END======================== */
 
 
@@ -277,7 +282,7 @@ img{
     display: flex;
     max-width: 90%;
     flex-wrap: wrap;
-    height: auto;
+    /* height: auto; */
     justify-content: center;
     align-items: center;
     margin-top: 50px;

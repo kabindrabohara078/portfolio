@@ -29,7 +29,7 @@ const Project = () => {
       project_date: '22-05-2026',
       project_logo:'/portfolio-logo.jpeg',
       project_desc:'This is a personal site made for myself. It has my projects and resume informations. It displays my skills with reactjs. Basically the one you are watching right now.',
-      project_version: 'v0.2.0',
+      project_version: 'v1.0.0',
       project_link:'NA'
     },
     {
@@ -47,10 +47,9 @@ const Project = () => {
     <> 
 
     <br className='bracket'/><br className='bracket'/><br className='bracket'/>
-      <div className="pro"><h1>My Projects under development</h1></div>
+    <br />
+      <div className="pro"><h1>My Projects under development</h1></div> <br />
     <div className="projects-main">
-
-
 
       <div className="card">
 
