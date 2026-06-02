@@ -5,7 +5,28 @@
 li{
     list-style: none;
 }
+.one-page-quick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one-page-quick .page-quick{
+    width: 250px;
+    background-color: #095285;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid red;
 
+}
+.one-page-quick .page-quick a{    
+    text-decoration: none;
+    color: white;    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
 .profile-image img{
     height: 200px;
