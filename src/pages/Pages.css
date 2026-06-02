@@ -87,6 +87,10 @@ li{
     justify-content: center;
     align-items: center;
 }
+.resume-video img{
+    /* height: 250px; */
+    width: 90%;
+}
 
 .resume-file{
     height: 100%;
@@ -125,6 +129,7 @@ li{
     justify-content: center;
     align-items: center;
 }
+
 /* ==================================RESUME-PAGE-END==================================*/
 
 
