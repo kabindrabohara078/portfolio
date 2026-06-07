@@ -16,11 +16,11 @@ const Project = () => {
     },
     {
       id:'2',
-      project_name:'EchoGraph (Frontend)',
+      project_name:'EchoGraph',
       project_date: '27-05-2026',
-      project_logo:'/Screenshot_2026-05-31_20-05-42.png',
-      project_desc:'React-based frontend for EchoGraph — an AI semantic memory system for storing, searching, and interacting with contextual memories through a clean API-driven interface. ',
-      project_version: 'v0.0.1',
+      project_logo:'/echograph.png',
+      project_desc:'[React-based] EchoGraph — an AI semantic memory system for storing, searching, and interacting with contextual memories through a clean API-driven interface. ',
+      project_version: 'v0.0.5',
       project_link:'https://echograph-frontend.vercel.app/'
     },
     {
