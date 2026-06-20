@@ -10,7 +10,7 @@ li{
     justify-content: center;
     align-items: center;
 }
-.one-page-quick .page-quick{
+.page-quick a{
     width: 300px;
     background-color: #095285;
     height: 30px;
@@ -18,30 +18,43 @@ li{
     border: 1px solid red;
 
 }
-.one-page-quick .page-quick a{    
+.page-quick a{    
     text-decoration: none;
     color: white;    
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 30px;
+    width: 200px;
+    font-size: 10px;
 }
 
 .profile-image img{
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    
 
 }
 .profile-image{
     margin-top: 30px;
+    /* display: flex; */
+    justify-content: center;
+}
+.hero{
+    font-size: 30px;
+    padding-left: 0px;
+}
+.profile-image .pic{
+    /* background-color: #095285; */
     display: flex;
     justify-content: center;
 }
-.main-contact .hero{
-    font-size: 40px;
-    padding-left: 10px;
+.profile-image .opl{
+    /* background-color: #095285; */
+    display: flex;
+    justify-content: center;
 }
 
 .media ul .tile a{
@@ -61,7 +74,7 @@ li{
     display: none;
 }
 .profile-image .page-quick{
-    display: none;
+    
 }
 .media .tile{
     height: 50px;
@@ -109,7 +122,6 @@ li{
 .keywords ul{
     line-height: 2;
 }
-
 
 /* ==================================RESUME-PAGE-START==================================*/
 .resume-video iframe{
@@ -160,6 +172,7 @@ li{
     color: white;
     height: 100%;
     width: 100%;
+    /* background-color: #095285; */
 }
 .title-1{
     display: flex;
@@ -186,20 +199,8 @@ li{
 }
 
 
+
 /* ==============================PROJECTS-PAGE-END======================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -210,7 +211,7 @@ li{
 /* ========================ABOUT-PAGE-START========================= */
 .name{
     display: block;
-    font-size: 70px;
+    font-size: 50px;
     grid-column: 1/3;
     grid-row: 1/2;
     /* background-color: aqua; */
@@ -222,10 +223,11 @@ li{
     grid-template-columns: 1fr 2fr;
 }
 .profile-image img{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     border-radius: 20%;
-    margin-left: 100px;
+    /* margin-left: 100px; */
+
 }
 .name-down{
     display: none;
@@ -235,9 +237,9 @@ li{
     margin-top: 30px;
     display: block;
     grid-column: 2/3;
-    /* background-color: aquamarine; */
+    grid-row: 2/3;
     
-    font-size: 25px;
+    font-size: 20px;
 }
 .profile-image{
     display: flex;
@@ -249,9 +251,8 @@ li{
     line-height: 40px;
     margin-left: 30px;
 }
-.one-page-quick{
-    display: none;
-}
+
+
 /* ========================ABOUT-PAGE-END========================= */
 
 
@@ -362,7 +363,7 @@ li{
 }
 .row-1{
 
-    margin-top: 100px;
+    margin-top: 50px;
     
     gap: 200px;
     display: flex;
@@ -406,6 +407,11 @@ li{
 
 }
 
+.main-contact .main-hero{
+    /* padding-left: 50px; */
+    /* background-color: #095285; */
+    margin-left: 420px;
+}
 
 /* ================================CONTACT-PAGE-END=================================== */
 

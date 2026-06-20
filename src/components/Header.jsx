@@ -46,7 +46,7 @@ const Header = (props) => {
             <ul><Link 
             style={{
               color:'white'
-            }} to='/contacts'>Contact</Link></ul>
+            }} to='/contacts'>Connect</Link></ul>
         </div>
     </div>
   )

@@ -45,7 +45,7 @@ const Menu = (props) => {
                     <ul>
                         <Link onClick={() => {
                             props.setMenu(!props.menu)
-                        }} to='/contacts'>Contact</Link>
+                        }} to='/contacts'>Connect</Link>
                     </ul>
 
 

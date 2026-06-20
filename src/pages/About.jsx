@@ -8,31 +8,37 @@ const About = () => {
             <h1 className='name name-up' style={{ textAlign: 'center' }}>KABINDRA BOHARA G</h1>
 
             <div className="profile-image">
+
+                <div className='pic'>
+
                 <img src="/profile-picture.jpeg" alt="" />
+                </div>
+
+                <br />
+                
+
+                <div className='opl'>
                  <div className="page-quick">
+                    <br />
 
                     <Link to='https://one-page-resume-ashen.vercel.app/'>
-                        <div className="click-quick">
+                   
                             Click here for a one-page version
-                        </div>
+                      
                     </Link>
                 </div>
+                </div>
+
+
             </div>
+            <br />
 
             <h1 className='name-down' style={{ textAlign: 'center' }}>KABINDRA BOHARA G</h1>
             
-            <div className="one-page-quick">
-                <div className="page-quick">
-
-                    <Link to='https://one-page-resume-ashen.vercel.app/'>
-                        <div className="click-quick">
-                            Click here for a one-page version
-                        </div>
-                    </Link>
-                </div>
-            </div>
+           
 
             <div className="about">
+                <br /><br /><br />
                 <h1>About Me</h1> <br className='bracket' />
 
                 <p>

@@ -8,7 +8,7 @@ const Project = () => {
     {
       id:'3',
       project_name:'Circle Sync [not mobile friendly + no backend yet]',
-      project_date: '31-05-2026',
+      project_date: '20-06-2026',
       project_logo:'/Screenshot_2026-05-31_19-38-55.png',
       project_desc:'This project is a social media application that utilizes graph data structures to represent users, interests, and interactions.',
       project_version: 'v0.0.3',
@@ -17,7 +17,7 @@ const Project = () => {
     {
       id:'2',
       project_name:'EchoGraph',
-      project_date: '27-05-2026',
+      project_date: '07-06-2026',
       project_logo:'/echograph.png',
       project_desc:'[React-based] EchoGraph — an AI semantic memory system for storing, searching, and interacting with contextual memories through a clean API-driven interface. ',
       project_version: 'v0.0.5',

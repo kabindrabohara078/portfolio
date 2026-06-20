@@ -3,7 +3,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Contact from './pages/Contact'
+import Connect from './pages/Connect'
 import Resume from './pages/Resume'
 import Project from './pages/Project'
 import About from './pages/About'
@@ -36,7 +36,7 @@ const App = () => {
         <Route path='/' element={<About/>}/>
         <Route path='/resume' element={<Resume/>}/>
         <Route path='/projects' element={<Project/>}/>
-        <Route path='/contacts' element={<Contact/>}/>
+        <Route path='/contacts' element={<Connect/>}/>
       </Routes>
 
 
