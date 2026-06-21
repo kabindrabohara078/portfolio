@@ -6,7 +6,7 @@ const Project = () => {
 
   const projects=[
     {
-      id:'3',
+      id:'4',
       project_name:'Circle Sync [not mobile friendly + no backend yet]',
       project_date: '20-06-2026',
       project_logo:'/Screenshot_2026-05-31_19-38-55.png',
@@ -15,7 +15,7 @@ const Project = () => {
       project_link:'https://circle-sync-pxo7.vercel.app/'
     },
     {
-      id:'2',
+      id:'3',
       project_name:'EchoGraph',
       project_date: '07-06-2026',
       project_logo:'/echograph.png',
@@ -24,13 +24,22 @@ const Project = () => {
       project_link:'https://echograph-frontend.vercel.app/'
     },
     {
-      id:'1',
+      id:'2',
       project_name:'Personal Portfolio',
       project_date: '22-05-2026',
       project_logo:'/portfolio-logo.jpeg',
       project_desc:'This is a personal site made for myself. It has my projects and resume informations. It displays my skills with reactjs. Basically the one you are looking at right now.',
       project_version: 'v1.0.0',
       project_link:'NA'
+    },
+    {
+      id:'1',
+      project_name:'Basic Todo App',
+      project_date: '15-05-2026',
+      project_logo:'/just_do.png',
+      project_desc:'A basic ToDo app. Add, remove, and mark as done your todos.',
+      project_version: 'v1.0.0',
+      project_link:'https://just-do-jet.vercel.app/'
     },
     {
       id:'0',
