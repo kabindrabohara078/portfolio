@@ -1,14 +1,13 @@
-import React from 'react'
 import './Components.css'
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
-    <div className='footer-main' style={{
-      display:'flex', justifyContent:'center', alignItems:'center'
-    }}>Designed with &hearts; by Kabindra | <div style={{
-      color:'red'
-    }}>[not fully developed yet]
-      </div></div>
+    <div className='footer-main'>
+      <p>
+        Designed with <span>&hearts;</span> by Kabindra Bohara &copy; {currentYear}
+      </p>
+    </div>
   )
 }
 

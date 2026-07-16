@@ -1,60 +1,48 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Components.css'
 
 const Menu = (props) => {
-    return (
-        <div className='menu-main'>
+  const closeMenu = () => props.setMenu(false);
 
-            <div className="list">
+  return (
+    <div className='menu-main'>
+      <div className="list">
+        <ul>
+          <li>
+            <NavLink onClick={closeMenu} to='/'>
+              About
+            </NavLink>
+          </li>
 
-                <ul>
-
-
-
-                    <ul>
-                        <Link onClick={() => {
-                            props.setMenu(!props.menu)
-                        }} to='/'>About</Link>
-                    </ul>
-
-
-                    <ul>
-                        <Link onClick={() => {
-                            props.setMenu(!props.menu)
-                        }} to='/resume'>Resume</Link>
-
-                        <div className='sub'>
-
-
-                        <Link to='/resume' onClick={()=> props.setMenu(false)} className="subs">ATS</Link> <br />
-                        <Link to='/resume' onClick={()=> props.setMenu(false)} className="subs">One Page</Link><br />
-                        <Link to='/resume' onClick={()=> props.setMenu(false)} className="subs">Video Resume</Link>
-
-                        </div>
-                    </ul>
-
-
-                    <ul>
-                        <Link onClick={() => {
-                            props.setMenu(!props.menu)
-                        }} to='/projects'>Projects</Link>
-                    </ul>
-
-
-                    <ul>
-                        <Link onClick={() => {
-                            props.setMenu(!props.menu)
-                        }} to='/contacts'>Connect</Link>
-                    </ul>
-
-
-
-                </ul>
+          <li>
+            <NavLink onClick={closeMenu} to='/resume'>
+              Resume
+            </NavLink>
+            <div className='sub'>
+              <a href="/kabindra_bohara_ATS_2026.pdf" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="subs">
+                ATS PDF
+              </a>
+              <a href="/Kabindra_Bohara_G_Resume_22_05_2026.pdf" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="subs">
+                One Page PDF
+              </a>
             </div>
+          </li>
 
-        </div>
-    )
+          <li>
+            <NavLink onClick={closeMenu} to='/projects'>
+              Projects
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink onClick={closeMenu} to='/contacts'>
+              Connect
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </div>
+  )
 }
 
 export default Menu

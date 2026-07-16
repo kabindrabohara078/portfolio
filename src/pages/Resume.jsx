@@ -1,47 +1,44 @@
-import React from 'react'
 import './Pages.css'
 
 const Resume = () => {
   return (
-    <div className="resume-main">
-      
-        <br /> <br /> 
-      
-      <div className="title-1">
+    <div className="resume-container">
+      <div className="resume-section">
+        <div className="section-header">
+          <h1>My Resume</h1>
+          <p>View and download my professional credentials</p>
+        </div>
 
-      
-        <h1>One Page Resume</h1> <br /><br /> 
-      </div> 
-      <br />
-      
-      <div className="resume-file">
-        <img src="/resume.jpeg" alt="One page resume image" />
-      </div> <br />
-      <div className="download-resume">
-
-      <a href="/Kabindra_Bohara_G_Resume_22_05_2026.pdf" download>Download One Page</a>
-      <a href="/kabindra_bohara_ATS_2026.pdf" download>Download ATS</a>
-      
+        <div className="resume-preview-container">
+          <div className="resume-file">
+            <img src="/resume.jpeg" alt="One Page Resume Preview" />
+          </div>
+          
+          <div className="download-resume">
+            <a href="/Kabindra_Bohara_G_Resume_22_05_2026.pdf" download className="btn-primary">
+              Download One Page
+            </a>
+            <a href="/kabindra_bohara_ATS_2026.pdf" download className="btn-secondary">
+              Download ATS Version [latest]
+            </a>
+          </div>
+        </div>
       </div>
 
-      <br /><br />
+      <div className="resume-section video-section">
+        <div className="section-header">
+          <h2>Video Resume</h2>
+          <p>A short video introduction of my skills and experience</p>
+        </div>
 
-      <div className="title-1">
-        <br /><br /> <br /><br /><br />
-
-      
-        <h1>Video Resume</h1>
+        <div className="resume-video-container">
+          <div className="video-coming-soon">
+            {/* <div className="coming-soon-icon"></div> */}
+            <h3>Coming Soon</h3>
+            <p>Producing a short video presentation to showcase my projects and technical background. Please wait!</p>
+          </div>
+        </div>
       </div>
-
-<br /><br />
-
-      <div className="resume-video">
-        {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/xE02X2RR_Eg?si=2-ZvREHrWRjapbBP" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
-        <img src="/project-na.jpeg" alt="unavailable" />
-      </div>
-
-      <br /><br />
-      
     </div>
   )
 }

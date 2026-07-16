@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -13,41 +13,35 @@ const App = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <div className='app-main'>
-
-      <BrowserRouter>
-      
-
-      <div className="header">
-      <Header menu={menu} setMenu={setMenu}/>
-      </div>
-
-
-
-      {menu && 
-        <div className="menu-container">
-
-          <Menu menu={menu} setMenu={setMenu}/>
+    <BrowserRouter>
+      <div className='app-main'>
+        <div className="header">
+          <Header menu={menu} setMenu={setMenu}/>
         </div>
-      }
 
-      <div className="content"  onClick={() => setMenu(false)}>
-      <Routes>
-        <Route path='/' element={<About/>}/>
-        <Route path='/resume' element={<Resume/>}/>
-        <Route path='/projects' element={<Project/>}/>
-        <Route path='/contacts' element={<Connect/>}/>
-      </Routes>
+        {menu && (
+          <>
+            <div className="menu-overlay" onClick={() => setMenu(false)}></div>
+            <div className="menu-container">
+              <Menu menu={menu} setMenu={setMenu}/>
+            </div>
+          </>
+        )}
 
+        <div className="content" onClick={() => setMenu(false)}>
+          <Routes>
+            <Route path='/' element={<About/>}/>
+            <Route path='/resume' element={<Resume/>}/>
+            <Route path='/projects' element={<Project/>}/>
+            <Route path='/contacts' element={<Connect/>}/>
+          </Routes>
+        </div>
 
+        <div className="footer">
+          <Footer/>
+        </div>
       </div>
-
-
-      </BrowserRouter>
-      <div className="footer">
-        <Footer/>
-      </div>
-    </div>
+    </BrowserRouter>
   )
 }
 

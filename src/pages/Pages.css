@@ -1,420 +1,536 @@
-.name-up{
-    display: none;
+/* ==========================================================================
+   PAGE LAYOUTS (About, Projects, Resume, Connect)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. ABOUT PAGE
+   -------------------------------------------------------------------------- */
+.about-main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 20px 0;
 }
 
-li{
-    list-style: none;
-}
-.one-page-quick{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.page-quick a{
-    width: 300px;
-    background-color: #095285;
-    height: 30px;
-    border-radius: 20px;
-    border: 1px solid red;
-
-}
-.page-quick a{    
-    text-decoration: none;
-    color: white;    
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 200px;
-    font-size: 10px;
+.name {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
-.profile-image img{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    
-
-}
-.profile-image{
-    margin-top: 30px;
-    /* display: flex; */
-    justify-content: center;
-}
-.hero{
-    font-size: 30px;
-    padding-left: 0px;
-}
-.profile-image .pic{
-    /* background-color: #095285; */
-    display: flex;
-    justify-content: center;
-}
-.profile-image .opl{
-    /* background-color: #095285; */
-    display: flex;
-    justify-content: center;
+.name-up {
+  display: none; /* Hide top name on mobile */
 }
 
-.media ul .tile a{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 20px;
-    color: black;
-
-}
-.media ul{
-    display: block;
-}
-.pc-media{
-    display: none;
-}
-.profile-image .page-quick{
-    
-}
-.media .tile{
-    height: 50px;
-    width: 100%;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: left;
-    align-items: center;
-
-    padding-left: 0px;
-    margin-bottom: 20px;
-
-}
-.media ul .tile a{
-    text-decoration: none;
-
+.name-down {
+  display: block;
+  /* background: linear-gradient(135deg, #fff 30%, var(--accent) 100%); */
+  color: black;
 }
 
-.media ul .tile a img{
-    height: 40px;
-
+/* Profile Photo */
+.profile-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.about{
-    text-align: justify;
-    line-height: 1.5;
-    width: 100%;
-    /* border: 1px solid pink; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.profile-image .pic {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 4px;
+  /* box-shadow: var(--shadow-lg); */
 }
 
-.about p{
-    width: 95%;
-
-}
-.bracket{
-    display: none;
-}
-.keywords{
-    font-size: 12px;
-}
-.keywords ul{
-    line-height: 2;
+.profile-image .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--bg-primary);
+  transition: transform 0.3s ease;
 }
 
-/* ==================================RESUME-PAGE-START==================================*/
-.resume-video iframe{
-    height: 250px;
-    width: 100%;
-    max-width: 550px;
-    
-}
-.resume-video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.resume-video img{
-    height: 250px;
-    width: 90%;
-    
-}
-
-.resume-file{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: gray; */
-}
-
-.resume-file img{
-    
-    height: 60%;
-    border-radius: 0px;
-    width: 80%;
-    border: 1px solid #095285;
-}
-
-.download-resume{
-    display: flex;
-    justify-content: center;
-    background-color: #095285;
-    height: 30px;
-}
-.download-resume a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    height: 100%;
-    width: 100%;
-    /* background-color: #095285; */
-}
-.title-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* ==================================RESUME-PAGE-END==================================*/
-
-
-
-
-
-
-/* ==============================PROJECTS-PAGE-START======================== */
-.projects-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pro h1{
-    padding-left: 10px;
+.profile-image:hover .pic img {
+  transform: scale(1.03);
 }
 
 
-
-/* ==============================PROJECTS-PAGE-END======================== */
-
-
-
-
-
-/* THIS IS PC VERSION OF THE PAGES */
-@media (min-width:1024px){
-/* ========================ABOUT-PAGE-START========================= */
-.name{
-    display: block;
-    font-size: 50px;
-    grid-column: 1/3;
-    grid-row: 1/2;
-    /* background-color: aqua; */
+.page-quick{
+  padding-left: 10px;
 }
-.about-main{
-    margin-top: 40px;
+/* One Page Resume Quick Link */
+.page-quick a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background: black;
+  border: 1px solid rgba(14, 120, 249, 0.3);
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  /* padding-left: 10px; */
+}
+
+.page-quick a:hover {
+  /* background: var(--primary); */
+  color: #fff;
+  /* border-color: var(--primary); */
+  /* box-shadow: 0 0 15px rgba(14, 120, 249, 0.4); */
+}
+
+/* Main Text & Attributes */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: black;
+  text-align: justify;
+}
+
+.keywords {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* background: var(--bg-secondary); */
+  border: 2px solid black;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.keywords h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+
+.keywords ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  list-style: none;
+}
+
+.keywords li {
+  font-size: 20px;
+  font-weight: 500;
+  /* color: black; */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.keywords li span {
+  /* color: var(--accent); */
+  font-weight: 700;
+}
+
+
+/* --------------------------------------------------------------------------
+   2. PROJECTS PAGE
+   -------------------------------------------------------------------------- */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.projects-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  /* color: var(--text-primary); */
+  margin-bottom: 8px;
+}
+
+.projects-header p {
+  font-size: 18px;
+  /* color: var(--text-secondary); */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  justify-items: center;
+  /* border: 1px solid black; */
+}
+
+
+/* --------------------------------------------------------------------------
+   3. RESUME PAGE
+   -------------------------------------------------------------------------- */
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header h1,
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 800;
+  /* color: var(--text-primary); */
+  margin-bottom: 8px;
+}
+
+.section-header p {
+  font-size: 15px;
+  /* color: var(--text-secondary); */
+}
+
+.resume-preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.resume-file {
+  width: 100%;
+  max-width: 480px;
+  /* border-radius: 12px; */
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease;
+}
+
+.resume-file:hover {
+  transform: scale(1.03);
+}
+
+.resume-file img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.download-resume {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.download-resume a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  /* border-radius: 8px; */
+  /* transition: all 0.2s ease-in; */
+  transition: all 0.15s ease-in;
+}
+
+.download-resume .btn-primary {
+  background-color: rgb(78, 78, 195);
+  color: #fff;
+  transition: all 0.15s ease-in;
+
+}
+
+.download-resume .btn-primary:hover {
+  /* background-color: var(--primary-hover); */
+  /* box-shadow: 0 0 15px rgba(14, 120, 249, 0.4); */
+  border: 1px solid rgb(213, 190, 190);
+  transform: scale(1.05);
+
+  
+}
+
+.download-resume .btn-secondary {
+  background-color: var(--bg-secondary);
+  /* border: 1px solid var(--border-color); */  
+  color: var(--text-primary);
+  transition: all 0.15s ease-in;
+
+}
+
+.download-resume .btn-secondary:hover {
+  /* background-color: var(--border-color); */
+  border:1px solid rgb(213, 190, 190);
+  transform: scale(1.05);
+}
+
+/* Video Placeholder Coming Soon Card */
+.resume-video-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.video-coming-soon {
+  background: white;
+  border: 1px solid var(--border-color);
+  /* border-radius: 16px; */
+  border: 1px solid black;
+  padding: 40px 24px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  box-shadow: var(--shadow-md);
+  height: 270px;
+}
+
+.video-coming-soon .coming-soon-icon {
+  font-size: 40px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.video-coming-soon h3 {
+  font-size: 20px;
+  font-weight: 700;
+  /* color: var(--text-primary); */
+}
+
+.video-coming-soon p {
+  font-size: 14px;
+  /* color: var(--text-secondary); */
+  line-height: 1.6;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+
+/* --------------------------------------------------------------------------
+   4. CONNECT / CONTACT PAGE
+   -------------------------------------------------------------------------- */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  /* color: var(--text-primary); */
+  margin-bottom: 8px;
+}
+
+.contact-header p {
+  font-size: 15px;
+  /* color: var(--text-secondary); */
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  /* color: red; */
+  /* border-left: 3px solid var(--primary); */
+  padding-left: 12px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 20px;
+  /* background: var(--bg-card); */
+  border: 1px solid gray;
+  /* border-radius: 12px; */
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: rgb(205, 170, 170);
+  background: var(--bg-card-hover);
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  /* background: rgba(255, 255, 255, 0.05); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+
+.contact-icon img {
+  width: 24px;
+  height: 24px;
+  /* object-fit: contain; */
+}
+
+.contact-details h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 4px;
+}
+
+.contact-details p {
+  font-size: 14px;
+  color: black;
+}
+
+
+/* ==========================================================================
+   DESKTOP MEDIA QUERIES (1024px+)
+   ========================================================================== */
+@media (min-width: 1024px) {
+  /* ABOUT PAGE DESKTOP */
+  .about-main {
     display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 1fr 2fr;
-}
-.profile-image img{
-    height: 300px;
-    width: 300px;
-    border-radius: 20%;
-    /* margin-left: 100px; */
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    align-items: start;
+  }
 
-}
-.name-down{
-    display: none;
-}
-
-.about{
-    margin-top: 30px;
+  .name-up {
     display: block;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    
-    font-size: 20px;
-}
-.profile-image{
-    display: flex;
-    flex-direction: column;
-}
-.keywords{
-    margin-top: 100px;
-    /* background-color: aqua; */
-    line-height: 40px;
-    margin-left: 30px;
-}
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    text-align: left;
+    font-size: 48px;
+    color: rgb(42, 37, 37);
+    /* background: linear-gradient(135deg, #fff 30%, var(--accent) 100%); */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  }
 
+  .name-down {
+    display: none; /* Hide bottom name on desktop */
+  }
 
-/* ========================ABOUT-PAGE-END========================= */
+  .profile-image {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-items: flex-start;
+  }
 
+  .profile-image .pic {
+    width: 260px;
+    height: 260px;
+    border-radius: 24px;
+  }
 
+  .profile-image .pic img {
+    border-radius: 20px;
+  }
 
+  .about {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 
+  .about h2 {
+    display: none; /* Already covered by name-up header */
+  }
 
+  .keywords {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    margin-top: -20px;
+  }
 
-/* ============================RESUME-PAGE-START================================ */
-.resume-file{
-    height: 100%;
-    width: 100%;
-    display: flex;
+  .keywords ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* PROJECTS PAGE DESKTOP */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  /* RESUME PAGE DESKTOP */
+  .resume-container {
+    gap: 64px;
+  }
+
+  .resume-preview-container {
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
-}
-.resume-file img{
-    height: 80%;
-    width: 30%;
-    border-radius: 0px;
-    /* background-color: aqua; */
-}
+    gap: 40px;
+  }
 
-.resume-video{
-    display: flex;
-    justify-content: center;
-}
-.resume-video img{
-    width: 400px;
-    height: 300px;
-    border-radius: 0px;
-}
-.resume-video iframe{
-    height: 300px;
-    width: 30%;
-}
+  .resume-file {
+    max-width: 420px;
+    border: 1px solid black;
+  }
 
+  .download-resume {
+    max-width: 320px;
+    margin-top: 40px;
+  }
 
-.download-resume{
-    height: 50px;
-    width: 100%;
-    /* background-color: #095285; */
-    /* color: white; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.download-resume a{
-    /* background-color: pink; */
-    font-size: 25px;
-    text-decoration: none;
-    height: 100%;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.download-resume a:hover{
-    
-    background-color: rgb(17, 61, 206);
-    
-}
-
-/* ============================RESUME-PAGE-END================================ */
-
-
-
-
-
-
-/* ================================PROJECTS-PAGE-START=================================== */
-
-.pro{
-    display: flex;
-    justify-content: center;
-}
-
-.projects-main{
-    display: flex;
-    justify-content: center;
-}
-
-.card{
-    display: flex;
-    max-width: 90%;
-    flex-wrap: wrap;
-    /* height: auto; */
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    /* background-color: #095285; */
-}
-.bracket{
-    display: block;
-}
-
-/* ================================PROJECTS-PAGE-END=================================== */
-/* ================================CONTACT-PAGE-START=================================== */
-
-
-.media{
-    display: none;
-}
-.pc-media{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    /* background-color: red; */
-
-}
-.row-1{
-
-    margin-top: 50px;
-    
-    gap: 200px;
-    display: flex;
-
-}
-.row-2{
-    gap: 200px;
-    display: flex;
-
-}
-.pc-media .tile{
-    /* background-color: #095285; */
-    height: 250px;
-}
-
-.pc-media ul .tile a img{
-    height: 100px;
-    width: 100px;
-}
-.main-contact .hero{
-    font-size: 50px;
-}
-
-.pc-media ul .row-1 .tile a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    text-decoration: none;
+  /* CONNECT PAGE DESKTOP */
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
 }
-.pc-media ul .row-2 .tile a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    text-decoration: none;
-    gap: 20px;
-
-}
-
-.main-contact .main-hero{
-    /* padding-left: 50px; */
-    /* background-color: #095285; */
-    margin-left: 420px;
-}
-
-/* ================================CONTACT-PAGE-END=================================== */
-
-
-}
-

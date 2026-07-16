@@ -1,53 +1,50 @@
-import React from 'react'
 import './Components.css'
-import { Link } from 'react-router-dom'
-import Menu from './Menu'
+import { Link, NavLink } from 'react-router-dom'
 
 const Header = (props) => {
   return (
     <div className='header-main'>
-
-        <div className="header-left"><Link to='/' onClick={() => props.setMenu(false)}>
-            <h1>Portfolio</h1>
+      <div className="header-left">
+        <Link to='/' onClick={() => props.setMenu(false)}>
+          <h1>Portfolio</h1>
         </Link>
-        </div>
+      </div>
 
-        <div className="header-right-menu">
-          <div className="spans" 
-          style={{
-            cursor:'pointer'
-          }}
-          onClick={ () => {
-
-            props.setMenu(!props.menu)
-          }
-          }>
-
+      <div className="header-right-menu">
+        <div 
+          className="spans" 
+          onClick={() => props.setMenu(!props.menu)}
+        >
           <span></span>
           <span></span>
           <span></span>
-          </div>
         </div>
+      </div>
 
-
-        <div className='header-right'>
-            <ul><Link 
-            style={{
-              color:'white'
-            }} to='/'>About</Link></ul>
-            <ul><Link 
-            style={{
-              color:'white'
-            }} to='/resume'>Resume</Link></ul>
-            <ul><Link 
-            style={{
-              color:'white'
-            }} to='/projects'>Projects</Link></ul>
-            <ul><Link 
-            style={{
-              color:'white'
-            }} to='/contacts'>Connect</Link></ul>
-        </div>
+      <div className='header-right'>
+        <ul>
+          <li>
+            <NavLink to='/' className={({ isActive }) => isActive ? 'active' : ''}>
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/resume' className={({ isActive }) => isActive ? 'active' : ''}>
+              Resume
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/projects' className={({ isActive }) => isActive ? 'active' : ''}>
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/contacts' className={({ isActive }) => isActive ? 'active' : ''}>
+              Connect
+            </NavLink>
+          </li>
+        </ul>
+      </div>
     </div>
   )
 }
