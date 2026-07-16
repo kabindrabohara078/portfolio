@@ -18,7 +18,7 @@ const Resume = () => {
             <a href="/Kabindra_Bohara_G_Resume_22_05_2026.pdf" download className="btn-primary">
               Download One Page
             </a>
-            <a href="/kabindra_bohara_ATS_2026.pdf" download className="btn-secondary">
+            <a href="/kabindra_bohara_g_ats_july_2026.pdf" download className="btn-secondary">
               Download ATS Version [latest]
             </a>
           </div>
