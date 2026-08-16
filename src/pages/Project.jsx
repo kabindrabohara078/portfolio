@@ -7,10 +7,10 @@ const Project = () => {
       id: '4',
       project_name: 'Cosmo',
       project_date: '20-06-2026',
-      project_logo: '/circle_synk.png',
+      project_logo: '/cosmo.png',
       project_desc: 'A social media application which connects people based on interests of one another.',
-      project_version: 'v0.0.3',
-      project_link: 'https://circle-sync-pxo7.vercel.app/'
+      project_version: 'v0.0.5',
+      project_link: 'https://cosmo-qpz6-4vkcd2erp-kabindrabohara1-9505s-projects.vercel.app/'
     },
     {
       id: '3',
