@@ -5,10 +5,10 @@ const Project = () => {
   const projects = [
     {
       id: '4',
-      project_name: 'Circle Sync',
+      project_name: 'Cosmo',
       project_date: '20-06-2026',
       project_logo: '/circle_synk.png',
-      project_desc: 'A social media application leveraging graph data structures to map and traverse users, interests, and connections dynamically.',
+      project_desc: 'A social media application which connects people based on interests of one another.',
       project_version: 'v0.0.3',
       project_link: 'https://circle-sync-pxo7.vercel.app/'
     },
@@ -26,7 +26,7 @@ const Project = () => {
       project_name: 'Personal Portfolio',
       project_date: '22-05-2026',
       project_logo: '/portfolio-logo.jpeg',
-      project_desc: 'A modern developer portfolio showing skills, resume, and experience. Built with React and designed with high aesthetics.',
+      project_desc: 'A portfolio showing skills, resume, experience and more. Built with React and love.',
       project_version: 'v1.0.0',
       project_link: 'NA'
     },
@@ -44,7 +44,7 @@ const Project = () => {
       project_name: 'Basic Text Game',
       project_date: '08-05-2026',
       project_logo: '/basic-text-game-app-logo.jpeg',
-      project_desc: 'A simple text modifier tool executing string operations such as reversal, casing changes, size variations, and count analysis.',
+      project_desc: 'My first small project. A simple text modifier tool executing string operations such as reversal, casing changes, size variations, and count analysis.',
       project_version: 'v1.0.0',
       project_link: 'https://text-game-app.onrender.com/'
     }
